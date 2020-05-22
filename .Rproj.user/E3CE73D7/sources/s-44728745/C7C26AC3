@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1589612044715.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "C7C26AC3",
+    "lastKnownWriteTime" : 1589658980,
+    "last_content_update" : 1589658980063,
+    "path" : "D:/R Projects/aircraft_wildlife_hit_analysis_dsc_2CC _2/bird_analysis.R",
+    "project_path" : "bird_analysis.R",
+    "properties" : {
+        "cursorPosition" : "8,24",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

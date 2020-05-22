@@ -1,0 +1,6 @@
+data = read.csv('csv files//database_each_bird_count.csv')
+name = data$Var1
+number = data$Freq
+png(file = 'graphs//birds_pie.png')
+pie(number, name)
+dev.off()

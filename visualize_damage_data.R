@@ -1,0 +1,24 @@
+data = read.csv('csv files//data_count_damage.csv')
+name = data$damage_part
+number = data$total_hit
+
+piepercent<- round(100*number/sum(number), 1)
+png(file = 'graphs//damage_pie.png', width = 1080, height = 720,
+    units = "px", pointsize = 12, bg = "white", res = 95,
+    restoreConsole = TRUE)
+pie(number, labels = piepercent, main = 'Damages in different parts of the aircraft', 
+    radius = 1, cex = 0.75,
+    col = viridis::viridis_pal(option = "magma", direction=-1)(length(number)),
+    clockwise = TRUE, angle  = 45)
+legend("topright",name, legend = name, bty= 'n', cex = 1.2,
+       fill = viridis::viridis_pal(option = "magma", direction=-1)(length(number)))
+
+dev.off()
+
+png(file = 'graphs//damage_bar.png', width = 1080, height = 720,
+    units = "px", pointsize = 12, bg = "white", res = 110,
+    restoreConsole = TRUE)
+barplot(number, names.arg = name, xlab = 'Part of aircraft', ylab = 'Frequency of getting damaged',
+        main = 'Frequency of damage of diffrent parts', border = 'black', 
+        las=2, cex.names=.5)
+dev.off()
