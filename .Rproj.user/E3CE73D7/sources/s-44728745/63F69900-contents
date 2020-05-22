@@ -1,0 +1,4 @@
+data =read.csv('csv files//database_each_bird_count.csv')
+data = read.csv("csv files//database_birds.csv")
+data_each_bird_table = table(data$data.Species.Name)
+data_each_bird_df = as.data.frame(data_each_bird_table)
